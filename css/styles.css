@@ -351,6 +351,26 @@ footer {
 	font-weight: 500;
 	line-height: 1.14;
 }
+.underline-agency::after {
+	content: "";
+	display: block;
+	background-color: var(--accent-color);
+	height: 4px;
+	width: 53px;
+	border-radius: 2px;
+	position: absolute;
+	top: 77px;
+}
+.underline-portfolio::after {
+	content: "";
+	display: block;
+	background-color: var(--accent-color);
+	height: 4px;
+	width: 58px;
+	border-radius: 2px;
+	position: absolute;
+	top: 77px;
+}
 a {
 	text-decoration: none;
 }
