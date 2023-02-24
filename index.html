@@ -30,8 +30,8 @@
 				</a>
 				<nav class="menu-wrapper">
 					<ul class="menu">
-						<li>
-							<a href="./index.html" class="current underline-agency top-navigation-main-page">Agencja</a>
+						<li class="underline-agency">
+							<a href="./index.html" class="current top-navigation-main-page">Agencja</a>
 						</li>
 						<li><a href="./portfolio.html" class="top-navigation-main-page">Portfolio</a></li>
 						<li><a href="#" class="top-navigation-main-page">Kontakt</a></li>
@@ -66,7 +66,13 @@
 			<section class="hero-section">
 				<div class="container">
 					<h1 class="title-main-page">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-					<button type="button" class="button-main-page">Zamów usługe</button>
+					<button data-modal-open type="button" class="button-main-page">Zamów usługe</button>
+
+					<div data-modal class="modal is-hidden">
+						<div class="backdrop">
+							<button data-modal-close type="button" class="modal-button">X</button>
+						</div>
+					</div>
 				</div>
 			</section>
 
@@ -132,10 +138,11 @@
 				<div class="container">
 					<h2 class="what-we-do-title">Czym się zajmujemy</h2>
 					<ul class="what-we-do-list">
-						<li>
+						<li class="box-what-we-do">
+							<p class="overlay-what-we-do">APLIKACJE KOMPUTEROWE</p>
 							<img src="./images/what_we_do/what_we_do_img1.jpg" alt="Programowanie strony" width="370" height="294" />
 						</li>
-						<li>
+						<li class="box-what-we-do">
 							<p class="overlay-what-we-do">APLIKACJE MOBILNE</p>
 							<img
 								src="./images/what_we_do/what_we_do_img2.jpg"
@@ -144,7 +151,8 @@
 								height="294"
 							/>
 						</li>
-						<li>
+						<li class="box-what-we-do">
+							<p class="overlay-what-we-do">ROZWIĄZANIA GRAFICZNE</p>
 							<img src="./images/what_we_do/what_we_do_img3.jpg" alt="Wybór kolorów na ipad" width="370" height="294" />
 						</li>
 					</ul>
